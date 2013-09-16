@@ -25,6 +25,7 @@
 		6ED1663C17E6B241000FAEDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661417E6B240000FAEDB /* UIKit.framework */; };
 		6ED1664417E6B241000FAEDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1664217E6B241000FAEDB /* InfoPlist.strings */; };
 		6ED1664617E6B241000FAEDB /* spacecraftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1664517E6B241000FAEDB /* spacecraftTests.m */; };
+		6ED1665417E6BD3F000FAEDB /* ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1665317E6BD3F000FAEDB /* ship.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		6ED1664117E6B241000FAEDB /* spacecraftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spacecraftTests-Info.plist"; sourceTree = "<group>"; };
 		6ED1664317E6B241000FAEDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6ED1664517E6B241000FAEDB /* spacecraftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spacecraftTests.m; sourceTree = "<group>"; };
+		6ED1665217E6BD3F000FAEDB /* ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ship.h; sourceTree = "<group>"; };
+		6ED1665317E6BD3F000FAEDB /* ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ship.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 		6ED1664F17E6B83A000FAEDB /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				6ED1665217E6BD3F000FAEDB /* ship.h */,
+				6ED1665317E6BD3F000FAEDB /* ship.m */,
 			);
 			name = Sprites;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED1665417E6BD3F000FAEDB /* ship.m in Sources */,
 				6ED1662F17E6B240000FAEDB /* MyScene.m in Sources */,
 				6ED1662C17E6B240000FAEDB /* ViewController.m in Sources */,
 				6ED1662317E6B240000FAEDB /* AppDelegate.m in Sources */,
