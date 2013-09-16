@@ -92,6 +92,9 @@
 		6ED1660417E6B240000FAEDB = {
 			isa = PBXGroup;
 			children = (
+				6ED1665117E6B860000FAEDB /* AI */,
+				6ED1665017E6B845000FAEDB /* Scenes */,
+				6ED1664F17E6B83A000FAEDB /* Sprites */,
 				6ED1661817E6B240000FAEDB /* spacecraft */,
 				6ED1663F17E6B241000FAEDB /* spacecraftTests */,
 				6ED1660F17E6B240000FAEDB /* Frameworks */,
@@ -165,6 +168,27 @@
 				6ED1664217E6B241000FAEDB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6ED1664F17E6B83A000FAEDB /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sprites;
+			sourceTree = "<group>";
+		};
+		6ED1665017E6B845000FAEDB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		6ED1665117E6B860000FAEDB /* AI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
