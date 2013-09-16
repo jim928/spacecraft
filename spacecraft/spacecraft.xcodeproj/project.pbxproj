@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6ED1661117E6B240000FAEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661017E6B240000FAEDB /* Foundation.framework */; };
+		6ED1661317E6B240000FAEDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661217E6B240000FAEDB /* CoreGraphics.framework */; };
+		6ED1661517E6B240000FAEDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661417E6B240000FAEDB /* UIKit.framework */; };
+		6ED1661717E6B240000FAEDB /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661617E6B240000FAEDB /* SpriteKit.framework */; };
+		6ED1661D17E6B240000FAEDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1661B17E6B240000FAEDB /* InfoPlist.strings */; };
+		6ED1661F17E6B240000FAEDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1661E17E6B240000FAEDB /* main.m */; };
+		6ED1662317E6B240000FAEDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1662217E6B240000FAEDB /* AppDelegate.m */; };
+		6ED1662617E6B240000FAEDB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1662417E6B240000FAEDB /* Main_iPhone.storyboard */; };
+		6ED1662917E6B240000FAEDB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1662717E6B240000FAEDB /* Main_iPad.storyboard */; };
+		6ED1662C17E6B240000FAEDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1662B17E6B240000FAEDB /* ViewController.m */; };
+		6ED1662F17E6B240000FAEDB /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1662E17E6B240000FAEDB /* MyScene.m */; };
+		6ED1663117E6B240000FAEDB /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1663017E6B240000FAEDB /* Spaceship.png */; };
+		6ED1663317E6B240000FAEDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1663217E6B240000FAEDB /* Images.xcassets */; };
+		6ED1663A17E6B241000FAEDB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1663917E6B241000FAEDB /* XCTest.framework */; };
+		6ED1663B17E6B241000FAEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661017E6B240000FAEDB /* Foundation.framework */; };
+		6ED1663C17E6B241000FAEDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661417E6B240000FAEDB /* UIKit.framework */; };
+		6ED1664417E6B241000FAEDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1664217E6B241000FAEDB /* InfoPlist.strings */; };
+		6ED1664617E6B241000FAEDB /* spacecraftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1664517E6B241000FAEDB /* spacecraftTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6ED1663D17E6B241000FAEDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED1660517E6B240000FAEDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ED1660C17E6B240000FAEDB;
+			remoteInfo = spacecraft;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6ED1660D17E6B240000FAEDB /* spacecraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spacecraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED1661017E6B240000FAEDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6ED1661217E6B240000FAEDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6ED1661417E6B240000FAEDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6ED1661617E6B240000FAEDB /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		6ED1661A17E6B240000FAEDB /* spacecraft-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spacecraft-Info.plist"; sourceTree = "<group>"; };
+		6ED1661C17E6B240000FAEDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6ED1661E17E6B240000FAEDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6ED1662017E6B240000FAEDB /* spacecraft-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spacecraft-Prefix.pch"; sourceTree = "<group>"; };
+		6ED1662117E6B240000FAEDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6ED1662217E6B240000FAEDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6ED1662517E6B240000FAEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		6ED1662817E6B240000FAEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		6ED1662A17E6B240000FAEDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6ED1662B17E6B240000FAEDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6ED1662D17E6B240000FAEDB /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		6ED1662E17E6B240000FAEDB /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		6ED1663017E6B240000FAEDB /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		6ED1663217E6B240000FAEDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6ED1663817E6B241000FAEDB /* spacecraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spacecraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED1663917E6B241000FAEDB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6ED1664117E6B241000FAEDB /* spacecraftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spacecraftTests-Info.plist"; sourceTree = "<group>"; };
+		6ED1664317E6B241000FAEDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6ED1664517E6B241000FAEDB /* spacecraftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spacecraftTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6ED1660A17E6B240000FAEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED1661317E6B240000FAEDB /* CoreGraphics.framework in Frameworks */,
+				6ED1661517E6B240000FAEDB /* UIKit.framework in Frameworks */,
+				6ED1661717E6B240000FAEDB /* SpriteKit.framework in Frameworks */,
+				6ED1661117E6B240000FAEDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED1663517E6B241000FAEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED1663A17E6B241000FAEDB /* XCTest.framework in Frameworks */,
+				6ED1663C17E6B241000FAEDB /* UIKit.framework in Frameworks */,
+				6ED1663B17E6B241000FAEDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6ED1660417E6B240000FAEDB = {
+			isa = PBXGroup;
+			children = (
+				6ED1661817E6B240000FAEDB /* spacecraft */,
+				6ED1663F17E6B241000FAEDB /* spacecraftTests */,
+				6ED1660F17E6B240000FAEDB /* Frameworks */,
+				6ED1660E17E6B240000FAEDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6ED1660E17E6B240000FAEDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1660D17E6B240000FAEDB /* spacecraft.app */,
+				6ED1663817E6B241000FAEDB /* spacecraftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ED1660F17E6B240000FAEDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1661017E6B240000FAEDB /* Foundation.framework */,
+				6ED1661217E6B240000FAEDB /* CoreGraphics.framework */,
+				6ED1661417E6B240000FAEDB /* UIKit.framework */,
+				6ED1661617E6B240000FAEDB /* SpriteKit.framework */,
+				6ED1663917E6B241000FAEDB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6ED1661817E6B240000FAEDB /* spacecraft */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1662117E6B240000FAEDB /* AppDelegate.h */,
+				6ED1662217E6B240000FAEDB /* AppDelegate.m */,
+				6ED1662417E6B240000FAEDB /* Main_iPhone.storyboard */,
+				6ED1662717E6B240000FAEDB /* Main_iPad.storyboard */,
+				6ED1662A17E6B240000FAEDB /* ViewController.h */,
+				6ED1662B17E6B240000FAEDB /* ViewController.m */,
+				6ED1662D17E6B240000FAEDB /* MyScene.h */,
+				6ED1662E17E6B240000FAEDB /* MyScene.m */,
+				6ED1663017E6B240000FAEDB /* Spaceship.png */,
+				6ED1663217E6B240000FAEDB /* Images.xcassets */,
+				6ED1661917E6B240000FAEDB /* Supporting Files */,
+			);
+			path = spacecraft;
+			sourceTree = "<group>";
+		};
+		6ED1661917E6B240000FAEDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1661A17E6B240000FAEDB /* spacecraft-Info.plist */,
+				6ED1661B17E6B240000FAEDB /* InfoPlist.strings */,
+				6ED1661E17E6B240000FAEDB /* main.m */,
+				6ED1662017E6B240000FAEDB /* spacecraft-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6ED1663F17E6B241000FAEDB /* spacecraftTests */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1664517E6B241000FAEDB /* spacecraftTests.m */,
+				6ED1664017E6B241000FAEDB /* Supporting Files */,
+			);
+			path = spacecraftTests;
+			sourceTree = "<group>";
+		};
+		6ED1664017E6B241000FAEDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1664117E6B241000FAEDB /* spacecraftTests-Info.plist */,
+				6ED1664217E6B241000FAEDB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6ED1660C17E6B240000FAEDB /* spacecraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED1664917E6B241000FAEDB /* Build configuration list for PBXNativeTarget "spacecraft" */;
+			buildPhases = (
+				6ED1660917E6B240000FAEDB /* Sources */,
+				6ED1660A17E6B240000FAEDB /* Frameworks */,
+				6ED1660B17E6B240000FAEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = spacecraft;
+			productName = spacecraft;
+			productReference = 6ED1660D17E6B240000FAEDB /* spacecraft.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6ED1663717E6B241000FAEDB /* spacecraftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED1664C17E6B241000FAEDB /* Build configuration list for PBXNativeTarget "spacecraftTests" */;
+			buildPhases = (
+				6ED1663417E6B241000FAEDB /* Sources */,
+				6ED1663517E6B241000FAEDB /* Frameworks */,
+				6ED1663617E6B241000FAEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ED1663E17E6B241000FAEDB /* PBXTargetDependency */,
+			);
+			name = spacecraftTests;
+			productName = spacecraftTests;
+			productReference = 6ED1663817E6B241000FAEDB /* spacecraftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ED1660517E6B240000FAEDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "湛奇";
+				TargetAttributes = {
+					6ED1663717E6B241000FAEDB = {
+						TestTargetID = 6ED1660C17E6B240000FAEDB;
+					};
+				};
+			};
+			buildConfigurationList = 6ED1660817E6B240000FAEDB /* Build configuration list for PBXProject "spacecraft" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6ED1660417E6B240000FAEDB;
+			productRefGroup = 6ED1660E17E6B240000FAEDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ED1660C17E6B240000FAEDB /* spacecraft */,
+				6ED1663717E6B241000FAEDB /* spacecraftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6ED1660B17E6B240000FAEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED1663117E6B240000FAEDB /* Spaceship.png in Resources */,
+				6ED1663317E6B240000FAEDB /* Images.xcassets in Resources */,
+				6ED1662917E6B240000FAEDB /* Main_iPad.storyboard in Resources */,
+				6ED1662617E6B240000FAEDB /* Main_iPhone.storyboard in Resources */,
+				6ED1661D17E6B240000FAEDB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED1663617E6B241000FAEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED1664417E6B241000FAEDB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6ED1660917E6B240000FAEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED1662F17E6B240000FAEDB /* MyScene.m in Sources */,
+				6ED1662C17E6B240000FAEDB /* ViewController.m in Sources */,
+				6ED1662317E6B240000FAEDB /* AppDelegate.m in Sources */,
+				6ED1661F17E6B240000FAEDB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED1663417E6B241000FAEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED1664617E6B241000FAEDB /* spacecraftTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ED1663E17E6B241000FAEDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ED1660C17E6B240000FAEDB /* spacecraft */;
+			targetProxy = 6ED1663D17E6B241000FAEDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6ED1661B17E6B240000FAEDB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ED1661C17E6B240000FAEDB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6ED1662417E6B240000FAEDB /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ED1662517E6B240000FAEDB /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6ED1662717E6B240000FAEDB /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ED1662817E6B240000FAEDB /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		6ED1664217E6B241000FAEDB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ED1664317E6B241000FAEDB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6ED1664717E6B241000FAEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6ED1664817E6B241000FAEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ED1664A17E6B241000FAEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spacecraft/spacecraft-Prefix.pch";
+				INFOPLIST_FILE = "spacecraft/spacecraft-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6ED1664B17E6B241000FAEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spacecraft/spacecraft-Prefix.pch";
+				INFOPLIST_FILE = "spacecraft/spacecraft-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6ED1664D17E6B241000FAEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/spacecraft.app/spacecraft";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spacecraft/spacecraft-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "spacecraftTests/spacecraftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6ED1664E17E6B241000FAEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/spacecraft.app/spacecraft";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spacecraft/spacecraft-Prefix.pch";
+				INFOPLIST_FILE = "spacecraftTests/spacecraftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ED1660817E6B240000FAEDB /* Build configuration list for PBXProject "spacecraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED1664717E6B241000FAEDB /* Debug */,
+				6ED1664817E6B241000FAEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED1664917E6B241000FAEDB /* Build configuration list for PBXNativeTarget "spacecraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED1664A17E6B241000FAEDB /* Debug */,
+				6ED1664B17E6B241000FAEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6ED1664C17E6B241000FAEDB /* Build configuration list for PBXNativeTarget "spacecraftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED1664D17E6B241000FAEDB /* Debug */,
+				6ED1664E17E6B241000FAEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6ED1660517E6B240000FAEDB /* Project object */;
+}
