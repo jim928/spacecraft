@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E6DF8EC17E85021002AC280 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF8EB17E85021002AC280 /* StartScene.m */; };
+		6E6DF8EF17E853AA002AC280 /* ChoosShipScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF8EE17E853AA002AC280 /* ChoosShipScene.m */; };
+		6E6DF8F217E85661002AC280 /* corsair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF8F017E85661002AC280 /* corsair.png */; };
+		6E6DF8F317E85661002AC280 /* corsair@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF8F117E85661002AC280 /* corsair@2x.png */; };
+		6E6DF8F517E856D9002AC280 /* flare.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF8F417E856D9002AC280 /* flare.m4a */; };
+		6E6DF8F817E8597F002AC280 /* CenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF8F717E8597F002AC280 /* CenterManager.m */; };
+		6E6DF8FA17E85D81002AC280 /* waves.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF8F917E85D81002AC280 /* waves.caf */; };
+		6E6DF8FD17E861EA002AC280 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF8FB17E861EA002AC280 /* fire.png */; };
+		6E6DF8FE17E861EA002AC280 /* fire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF8FC17E861EA002AC280 /* fire@2x.png */; };
+		6E6DF90117E86265002AC280 /* FightScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF90017E86265002AC280 /* FightScene.m */; };
+		6E6DF90317E86335002AC280 /* menu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF90217E86335002AC280 /* menu.caf */; };
+		6E6DF90617E8667B002AC280 /* boss.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF90417E8667B002AC280 /* boss.png */; };
+		6E6DF90717E8667B002AC280 /* boss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF90517E8667B002AC280 /* boss@2x.png */; };
+		6E6DF90A17E8671A002AC280 /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF90817E8671A002AC280 /* monster.png */; };
+		6E6DF90B17E8671A002AC280 /* monster@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF90917E8671A002AC280 /* monster@2x.png */; };
+		6E6DF90E17E867A4002AC280 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF90D17E867A4002AC280 /* Player.m */; };
+		6E6DF91117E867BF002AC280 /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF91017E867BF002AC280 /* Monster.m */; };
+		6E6DF91417E867CB002AC280 /* Boss.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF91317E867CB002AC280 /* Boss.m */; };
+		6E6DF91917E8871D002AC280 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF91717E8871D002AC280 /* spark.png */; };
+		6E6DF91D17E88BEE002AC280 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF91C17E88BEE002AC280 /* ArcherProjectile.sks */; };
 		6ED1661117E6B240000FAEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661017E6B240000FAEDB /* Foundation.framework */; };
 		6ED1661317E6B240000FAEDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661217E6B240000FAEDB /* CoreGraphics.framework */; };
 		6ED1661517E6B240000FAEDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661417E6B240000FAEDB /* UIKit.framework */; };
@@ -25,7 +45,8 @@
 		6ED1663C17E6B241000FAEDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661417E6B240000FAEDB /* UIKit.framework */; };
 		6ED1664417E6B241000FAEDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1664217E6B241000FAEDB /* InfoPlist.strings */; };
 		6ED1664617E6B241000FAEDB /* spacecraftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1664517E6B241000FAEDB /* spacecraftTests.m */; };
-		6ED1665417E6BD3F000FAEDB /* ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1665317E6BD3F000FAEDB /* ship.m */; };
+		6ED1665817E6DF4C000FAEDB /* phoenix.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1665617E6DF4C000FAEDB /* phoenix.png */; };
+		6ED1665917E6DF4C000FAEDB /* phoenix@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1665717E6DF4C000FAEDB /* phoenix@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +60,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E6DF8EA17E85021002AC280 /* StartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScene.h; sourceTree = "<group>"; };
+		6E6DF8EB17E85021002AC280 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
+		6E6DF8ED17E853AA002AC280 /* ChoosShipScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosShipScene.h; sourceTree = "<group>"; };
+		6E6DF8EE17E853AA002AC280 /* ChoosShipScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosShipScene.m; sourceTree = "<group>"; };
+		6E6DF8F017E85661002AC280 /* corsair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corsair.png; sourceTree = "<group>"; };
+		6E6DF8F117E85661002AC280 /* corsair@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corsair@2x.png"; sourceTree = "<group>"; };
+		6E6DF8F417E856D9002AC280 /* flare.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = flare.m4a; sourceTree = "<group>"; };
+		6E6DF8F617E8597F002AC280 /* CenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterManager.h; sourceTree = "<group>"; };
+		6E6DF8F717E8597F002AC280 /* CenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterManager.m; sourceTree = "<group>"; };
+		6E6DF8F917E85D81002AC280 /* waves.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = waves.caf; sourceTree = "<group>"; };
+		6E6DF8FB17E861EA002AC280 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		6E6DF8FC17E861EA002AC280 /* fire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire@2x.png"; sourceTree = "<group>"; };
+		6E6DF8FF17E86265002AC280 /* FightScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FightScene.h; sourceTree = "<group>"; };
+		6E6DF90017E86265002AC280 /* FightScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FightScene.m; sourceTree = "<group>"; };
+		6E6DF90217E86335002AC280 /* menu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu.caf; sourceTree = "<group>"; };
+		6E6DF90417E8667B002AC280 /* boss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boss.png; sourceTree = "<group>"; };
+		6E6DF90517E8667B002AC280 /* boss@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boss@2x.png"; sourceTree = "<group>"; };
+		6E6DF90817E8671A002AC280 /* monster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster.png; sourceTree = "<group>"; };
+		6E6DF90917E8671A002AC280 /* monster@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monster@2x.png"; sourceTree = "<group>"; };
+		6E6DF90C17E867A4002AC280 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		6E6DF90D17E867A4002AC280 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		6E6DF90F17E867BF002AC280 /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
+		6E6DF91017E867BF002AC280 /* Monster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monster.m; sourceTree = "<group>"; };
+		6E6DF91217E867CB002AC280 /* Boss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boss.h; sourceTree = "<group>"; };
+		6E6DF91317E867CB002AC280 /* Boss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boss.m; sourceTree = "<group>"; };
+		6E6DF91717E8871D002AC280 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		6E6DF91C17E88BEE002AC280 /* ArcherProjectile.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ArcherProjectile.sks; sourceTree = "<group>"; };
 		6ED1660D17E6B240000FAEDB /* spacecraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spacecraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED1661017E6B240000FAEDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6ED1661217E6B240000FAEDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +111,8 @@
 		6ED1664117E6B241000FAEDB /* spacecraftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spacecraftTests-Info.plist"; sourceTree = "<group>"; };
 		6ED1664317E6B241000FAEDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6ED1664517E6B241000FAEDB /* spacecraftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spacecraftTests.m; sourceTree = "<group>"; };
-		6ED1665217E6BD3F000FAEDB /* ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ship.h; sourceTree = "<group>"; };
-		6ED1665317E6BD3F000FAEDB /* ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ship.m; sourceTree = "<group>"; };
+		6ED1665617E6DF4C000FAEDB /* phoenix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phoenix.png; sourceTree = "<group>"; };
+		6ED1665717E6DF4C000FAEDB /* phoenix@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phoenix@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +140,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E6DF91517E886D9002AC280 /* Emitters */ = {
+			isa = PBXGroup;
+			children = (
+				6E6DF91717E8871D002AC280 /* spark.png */,
+				6E6DF91C17E88BEE002AC280 /* ArcherProjectile.sks */,
+			);
+			name = Emitters;
+			sourceTree = "<group>";
+		};
 		6ED1660417E6B240000FAEDB = {
 			isa = PBXGroup;
 			children = (
+				6E6DF91517E886D9002AC280 /* Emitters */,
+				6ED1665517E6DF38000FAEDB /* Images */,
 				6ED1665117E6B860000FAEDB /* AI */,
 				6ED1665017E6B845000FAEDB /* Scenes */,
 				6ED1664F17E6B83A000FAEDB /* Sprites */,
@@ -176,8 +235,12 @@
 		6ED1664F17E6B83A000FAEDB /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
-				6ED1665217E6BD3F000FAEDB /* ship.h */,
-				6ED1665317E6BD3F000FAEDB /* ship.m */,
+				6E6DF90C17E867A4002AC280 /* Player.h */,
+				6E6DF90D17E867A4002AC280 /* Player.m */,
+				6E6DF90F17E867BF002AC280 /* Monster.h */,
+				6E6DF91017E867BF002AC280 /* Monster.m */,
+				6E6DF91217E867CB002AC280 /* Boss.h */,
+				6E6DF91317E867CB002AC280 /* Boss.m */,
 			);
 			name = Sprites;
 			sourceTree = "<group>";
@@ -185,6 +248,14 @@
 		6ED1665017E6B845000FAEDB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				6E6DF8F617E8597F002AC280 /* CenterManager.h */,
+				6E6DF8F717E8597F002AC280 /* CenterManager.m */,
+				6E6DF8EA17E85021002AC280 /* StartScene.h */,
+				6E6DF8EB17E85021002AC280 /* StartScene.m */,
+				6E6DF8ED17E853AA002AC280 /* ChoosShipScene.h */,
+				6E6DF8EE17E853AA002AC280 /* ChoosShipScene.m */,
+				6E6DF8FF17E86265002AC280 /* FightScene.h */,
+				6E6DF90017E86265002AC280 /* FightScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -194,6 +265,26 @@
 			children = (
 			);
 			name = AI;
+			sourceTree = "<group>";
+		};
+		6ED1665517E6DF38000FAEDB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1665617E6DF4C000FAEDB /* phoenix.png */,
+				6ED1665717E6DF4C000FAEDB /* phoenix@2x.png */,
+				6E6DF8F017E85661002AC280 /* corsair.png */,
+				6E6DF8F117E85661002AC280 /* corsair@2x.png */,
+				6E6DF90417E8667B002AC280 /* boss.png */,
+				6E6DF90517E8667B002AC280 /* boss@2x.png */,
+				6E6DF90817E8671A002AC280 /* monster.png */,
+				6E6DF90917E8671A002AC280 /* monster@2x.png */,
+				6E6DF8FB17E861EA002AC280 /* fire.png */,
+				6E6DF8FC17E861EA002AC280 /* fire@2x.png */,
+				6E6DF8F417E856D9002AC280 /* flare.m4a */,
+				6E6DF8F917E85D81002AC280 /* waves.caf */,
+				6E6DF90217E86335002AC280 /* menu.caf */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,11 +363,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6DF8FE17E861EA002AC280 /* fire@2x.png in Resources */,
+				6E6DF8F317E85661002AC280 /* corsair@2x.png in Resources */,
 				6ED1663117E6B240000FAEDB /* Spaceship.png in Resources */,
+				6E6DF8FA17E85D81002AC280 /* waves.caf in Resources */,
+				6E6DF90A17E8671A002AC280 /* monster.png in Resources */,
+				6E6DF91917E8871D002AC280 /* spark.png in Resources */,
+				6E6DF8F217E85661002AC280 /* corsair.png in Resources */,
 				6ED1663317E6B240000FAEDB /* Images.xcassets in Resources */,
+				6E6DF90B17E8671A002AC280 /* monster@2x.png in Resources */,
+				6E6DF8FD17E861EA002AC280 /* fire.png in Resources */,
 				6ED1662917E6B240000FAEDB /* Main_iPad.storyboard in Resources */,
+				6E6DF90317E86335002AC280 /* menu.caf in Resources */,
 				6ED1662617E6B240000FAEDB /* Main_iPhone.storyboard in Resources */,
+				6ED1665917E6DF4C000FAEDB /* phoenix@2x.png in Resources */,
+				6E6DF90617E8667B002AC280 /* boss.png in Resources */,
+				6E6DF91D17E88BEE002AC280 /* ArcherProjectile.sks in Resources */,
+				6E6DF8F517E856D9002AC280 /* flare.m4a in Resources */,
 				6ED1661D17E6B240000FAEDB /* InfoPlist.strings in Resources */,
+				6ED1665817E6DF4C000FAEDB /* phoenix.png in Resources */,
+				6E6DF90717E8667B002AC280 /* boss@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +401,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED1665417E6BD3F000FAEDB /* ship.m in Sources */,
+				6E6DF8F817E8597F002AC280 /* CenterManager.m in Sources */,
 				6ED1662F17E6B240000FAEDB /* MyScene.m in Sources */,
 				6ED1662C17E6B240000FAEDB /* ViewController.m in Sources */,
 				6ED1662317E6B240000FAEDB /* AppDelegate.m in Sources */,
+				6E6DF8EF17E853AA002AC280 /* ChoosShipScene.m in Sources */,
+				6E6DF91417E867CB002AC280 /* Boss.m in Sources */,
 				6ED1661F17E6B240000FAEDB /* main.m in Sources */,
+				6E6DF91117E867BF002AC280 /* Monster.m in Sources */,
+				6E6DF8EC17E85021002AC280 /* StartScene.m in Sources */,
+				6E6DF90E17E867A4002AC280 /* Player.m in Sources */,
+				6E6DF90117E86265002AC280 /* FightScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +632,7 @@
 				6ED1664B17E6B241000FAEDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6ED1664C17E6B241000FAEDB /* Build configuration list for PBXNativeTarget "spacecraftTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +641,7 @@
 				6ED1664E17E6B241000FAEDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
