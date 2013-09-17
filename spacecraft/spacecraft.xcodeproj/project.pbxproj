@@ -27,6 +27,8 @@
 		6E6DF91417E867CB002AC280 /* Boss.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF91317E867CB002AC280 /* Boss.m */; };
 		6E6DF91917E8871D002AC280 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF91717E8871D002AC280 /* spark.png */; };
 		6E6DF91D17E88BEE002AC280 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF91C17E88BEE002AC280 /* ArcherProjectile.sks */; };
+		6E6DF92017E890AC002AC280 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF91E17E890AC002AC280 /* bullet.png */; };
+		6E6DF92117E890AC002AC280 /* bullet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF91F17E890AC002AC280 /* bullet@2x.png */; };
 		6ED1661117E6B240000FAEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661017E6B240000FAEDB /* Foundation.framework */; };
 		6ED1661317E6B240000FAEDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661217E6B240000FAEDB /* CoreGraphics.framework */; };
 		6ED1661517E6B240000FAEDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED1661417E6B240000FAEDB /* UIKit.framework */; };
@@ -87,6 +89,8 @@
 		6E6DF91317E867CB002AC280 /* Boss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boss.m; sourceTree = "<group>"; };
 		6E6DF91717E8871D002AC280 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		6E6DF91C17E88BEE002AC280 /* ArcherProjectile.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ArcherProjectile.sks; sourceTree = "<group>"; };
+		6E6DF91E17E890AC002AC280 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		6E6DF91F17E890AC002AC280 /* bullet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bullet@2x.png"; sourceTree = "<group>"; };
 		6ED1660D17E6B240000FAEDB /* spacecraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spacecraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED1661017E6B240000FAEDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6ED1661217E6B240000FAEDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -280,6 +284,8 @@
 				6E6DF90917E8671A002AC280 /* monster@2x.png */,
 				6E6DF8FB17E861EA002AC280 /* fire.png */,
 				6E6DF8FC17E861EA002AC280 /* fire@2x.png */,
+				6E6DF91E17E890AC002AC280 /* bullet.png */,
+				6E6DF91F17E890AC002AC280 /* bullet@2x.png */,
 				6E6DF8F417E856D9002AC280 /* flare.m4a */,
 				6E6DF8F917E85D81002AC280 /* waves.caf */,
 				6E6DF90217E86335002AC280 /* menu.caf */,
@@ -364,8 +370,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E6DF8FE17E861EA002AC280 /* fire@2x.png in Resources */,
+				6E6DF92017E890AC002AC280 /* bullet.png in Resources */,
 				6E6DF8F317E85661002AC280 /* corsair@2x.png in Resources */,
 				6ED1663117E6B240000FAEDB /* Spaceship.png in Resources */,
+				6E6DF92117E890AC002AC280 /* bullet@2x.png in Resources */,
 				6E6DF8FA17E85D81002AC280 /* waves.caf in Resources */,
 				6E6DF90A17E8671A002AC280 /* monster.png in Resources */,
 				6E6DF91917E8871D002AC280 /* spark.png in Resources */,
