@@ -15,9 +15,13 @@
 
 @implementation Player
 
--(id)initWithImageNamed:(NSString *)name HP:(int)hpnum{
-    if (self = [super initWithImageNamed:name]) {
+-(id)initWithTexture:(SKTexture *)texture HP:(int)hpnum{
+    if (self = [super initWithTexture:texture]) {
         self.hp = hpnum;
+        self.name = @"player";
+//        self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(2, 2)];
+//        self.physicsBody.categoryBitMask = heroCategory;
+//        self.physicsBody.contactTestBitMask = monsterBulletCategory;
     }
     return self;
 }

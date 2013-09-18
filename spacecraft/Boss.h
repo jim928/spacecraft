@@ -9,5 +9,8 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface Boss : SKSpriteNode
+@property (nonatomic)int hp;
+
+-(id)initWithTexture:(SKTexture *)texture HP:(int)hpnum;
 
 @end

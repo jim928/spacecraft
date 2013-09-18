@@ -11,5 +11,5 @@
 @interface Player : SKSpriteNode
 @property (nonatomic)int hp;
 
--(id)initWithImageNamed:(NSString *)name HP:(int)hpnum;
+-(id)initWithTexture:(SKTexture *)texture HP:(int)hpnum;
 @end

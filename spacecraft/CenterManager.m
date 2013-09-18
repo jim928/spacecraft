@@ -9,7 +9,6 @@
 #import "CenterManager.h"
 
 @interface CenterManager (){
-    SKAction *playBGsound;
 }
 
 @end
@@ -30,21 +29,24 @@ static CenterManager *sharedInstance = nil;
 {
     self = [super init];
     if (self) {
+        self.heroTexture = [SKTexture textureWithImageNamed:@"corsair"];
+        self.bossTexture = [SKTexture textureWithImageNamed:@"boss"];
+        self.monsterTexture = [SKTexture textureWithImageNamed:@"monster"];
+        self.bulletTexture = [SKTexture textureWithImageNamed:@"bullet"];
         
+        self.bulletSpeed = 400.0;   //moves by 200 pix per second
     }
     return self;
 }
 
--(void)playmusic:(int)index{
-    NSLog(@"************** play music :%d",index);
-    NSString *filename = @"";
+- (void)playBGmusic:(int)index{
+    NSLog(@"************** play index :%d",index);
     if (index==1) {
-        filename = @"flare.m4a";
+        [self runAction:[SKAction playSoundFileNamed:@"flare.m4a" waitForCompletion:NO] withKey:@"bgMusic"];
+    }else{
+        [self runAction:[SKAction playSoundFileNamed:@"waves.caf" waitForCompletion:NO] withKey:@"bgMusic"];
+
     }
-    if (index==2) {
-        filename = @"waves.caf";
-    }
-    playBGsound = [SKAction repeatActionForever:[SKAction playSoundFileNamed:filename waitForCompletion:YES]];
-    [self runAction:playBGsound];
 }
+
 @end

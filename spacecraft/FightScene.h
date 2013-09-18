@@ -8,6 +8,8 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface FightScene : SKScene
+@interface FightScene : SKScene<SKPhysicsContactDelegate>{
+    
+}
 
 @end
