@@ -13,10 +13,6 @@
 -(id)initWithTexture:(SKTexture *)texture HP:(int)hpnum{
     if (self = [super initWithTexture:texture]) {
         self.hp = hpnum;
-        self.name = @"boss";
-        self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.size];
-        self.physicsBody.categoryBitMask = monsterCategory;
-        self.physicsBody.contactTestBitMask = heroBulletCategory;
     }
     return self;
 }

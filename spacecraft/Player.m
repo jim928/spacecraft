@@ -19,9 +19,10 @@
     if (self = [super initWithTexture:texture]) {
         self.hp = hpnum;
         self.name = @"player";
-//        self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(2, 2)];
-//        self.physicsBody.categoryBitMask = heroCategory;
-//        self.physicsBody.contactTestBitMask = monsterBulletCategory;
+        self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(2, 2)];
+        self.physicsBody.dynamic = NO;
+        self.physicsBody.categoryBitMask = heroCategory;
+        self.physicsBody.contactTestBitMask = monsterBulletCategory;
     }
     return self;
 }

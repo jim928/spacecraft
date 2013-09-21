@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E00838917ED7AC600DD31D3 /* SpawnManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E00838817ED7AC600DD31D3 /* SpawnManager.m */; };
 		6E6DF8EC17E85021002AC280 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF8EB17E85021002AC280 /* StartScene.m */; };
 		6E6DF8EF17E853AA002AC280 /* ChoosShipScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DF8EE17E853AA002AC280 /* ChoosShipScene.m */; };
 		6E6DF8F217E85661002AC280 /* corsair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DF8F017E85661002AC280 /* corsair.png */; };
@@ -62,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E00838717ED7AC600DD31D3 /* SpawnManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpawnManager.h; sourceTree = "<group>"; };
+		6E00838817ED7AC600DD31D3 /* SpawnManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpawnManager.m; sourceTree = "<group>"; };
 		6E6DF8EA17E85021002AC280 /* StartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScene.h; sourceTree = "<group>"; };
 		6E6DF8EB17E85021002AC280 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
 		6E6DF8ED17E853AA002AC280 /* ChoosShipScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosShipScene.h; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 		6ED1665117E6B860000FAEDB /* AI */ = {
 			isa = PBXGroup;
 			children = (
+				6E00838717ED7AC600DD31D3 /* SpawnManager.h */,
+				6E00838817ED7AC600DD31D3 /* SpawnManager.m */,
 			);
 			name = AI;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				6ED1661F17E6B240000FAEDB /* main.m in Sources */,
 				6E6DF91117E867BF002AC280 /* Monster.m in Sources */,
 				6E6DF8EC17E85021002AC280 /* StartScene.m in Sources */,
+				6E00838917ED7AC600DD31D3 /* SpawnManager.m in Sources */,
 				6E6DF90E17E867A4002AC280 /* Player.m in Sources */,
 				6E6DF90117E86265002AC280 /* FightScene.m in Sources */,
 			);

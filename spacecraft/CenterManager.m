@@ -34,7 +34,7 @@ static CenterManager *sharedInstance = nil;
         self.monsterTexture = [SKTexture textureWithImageNamed:@"monster"];
         self.bulletTexture = [SKTexture textureWithImageNamed:@"bullet"];
         
-        self.bulletSpeed = 400.0;   //moves by 200 pix per second
+        self.bulletSpeed = 400.0;   //moves by xxx pix per second
     }
     return self;
 }

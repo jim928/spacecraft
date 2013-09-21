@@ -7,8 +7,9 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "SpawnManager.h"
 
-@interface FightScene : SKScene<SKPhysicsContactDelegate>{
+@interface FightScene : SKScene<SKPhysicsContactDelegate,SpawnManagerDelegate>{
     
 }
 

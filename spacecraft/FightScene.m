@@ -15,6 +15,8 @@
     Player *pship;
     CGPoint touchposition;
     CGPoint myposition;
+    
+    
 }
 
 @end
@@ -35,8 +37,8 @@
         [pship runAction:[SKAction repeatActionForever:action]];
         [self addChild:pship];
         
-        [self runAction:[SKAction performSelector:@selector(createMonster) onTarget:self]];
-//        [self runAction:[SKAction repeatActionForever:[SKAction sequence:@[[SKAction performSelector:@selector(createMonster) onTarget:self],[SKAction waitForDuration:2]]]]];
+        [SpawnManager sharedInstance].delegate = self;
+        [[SpawnManager sharedInstance]start];
     }
     return self;
 }
@@ -64,7 +66,6 @@
     pship.position = CGPointMake(myposition.x+x, myposition.y+y);
 }
 - (void)didBeginContact:(SKPhysicsContact *)contact{
-    [self runAction:[SKAction playSoundFileNamed:@"explosion.wav" waitForCompletion:NO]];
     
     SKPhysicsBody *bulletBody,*shipBody;
     if (contact.bodyA.categoryBitMask<contact.bodyB.categoryBitMask) {
@@ -89,6 +90,7 @@
     bullet.position = CGPointMake(pship.position.x, pship.position.y+25);
     bullet.name = @"bullet";
     bullet.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(1, 1)];
+//    bullet.physicsBody.dynamic = NO;
     bullet.physicsBody.categoryBitMask = heroBulletCategory;
     bullet.physicsBody.contactTestBitMask = monsterCategory;
     [self addChild:bullet];
@@ -106,6 +108,7 @@
         pship.hp = pship.hp-1;
         if (pship.hp<=0) {
             [pship removeFromParent];
+            [self runAction:[SKAction playSoundFileNamed:@"explosion.wav" waitForCompletion:NO]];
         }
     }
     if ([body.node.name isEqualToString:@"monster"]) {
@@ -113,7 +116,8 @@
         monster.hp = monster.hp-1;
         if (monster.hp<=0) {
             [monster removeFromParent];
-            [self runAction:[SKAction performSelector:@selector(createMonster) onTarget:self]];
+            [[SpawnManager sharedInstance]monsterDie];
+            [self runAction:[SKAction playSoundFileNamed:@"explosion.wav" waitForCompletion:NO]];
         }
     }
     if ([body.node.name isEqualToString:@"boss"]) {
@@ -121,24 +125,41 @@
         aboss.hp = aboss.hp-1;
         if (aboss.hp<=0) {
             [aboss removeFromParent];
+            [[SpawnManager sharedInstance]bossDie];
+            [self runAction:[SKAction playSoundFileNamed:@"explosion.wav" waitForCompletion:NO]];
         }
     }
 }
 - (void)createMonster{
     Monster *amon = [[Monster alloc]initWithTexture:[CenterManager shareInstance].monsterTexture HP:1];
     amon.name = @"monster";
-    amon.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.size];
+    amon.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:amon.size];
+    amon.physicsBody.dynamic = NO;
     amon.physicsBody.categoryBitMask = monsterCategory;
     amon.physicsBody.contactTestBitMask = heroBulletCategory;
-    amon.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetHeight(self.frame)+amon.size.height/2);
+    amon.position = CGPointMake((amon.size.width/2+arc4random()%((int)CGRectGetWidth(self.frame)-(int)amon.size.width)), CGRectGetHeight(self.frame)+amon.size.height/2);
     [self addChild:amon];
     
-    [amon runAction:[SKAction sequence:@[
-                                        [SKAction moveByX:0 y:-80 duration:0.5],
-                                        [SKAction waitForDuration:0.3],
-                                        [SKAction moveByX:-120 y:0 duration:1.5],
-                                        [SKAction repeatActionForever:[SKAction sequence:@[[SKAction moveByX:240 y:0 duration:3.0],[SKAction moveByX:-240 y:0 duration:3.0]]]]
-                                        ]]];
+    [amon runAction:[SKAction moveByX:0 y:-100 duration:0.5]];
+}
+- (void)createBoss{
+    Boss *aboss = [[Boss alloc]initWithTexture:[CenterManager shareInstance].bossTexture HP:10];
+    aboss.name = @"boss";
+    aboss.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(100, 3)];
+    aboss.physicsBody.dynamic = NO;
+    aboss.physicsBody.categoryBitMask = monsterCategory;
+    aboss.physicsBody.contactTestBitMask = heroBulletCategory;
+    aboss.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetHeight(self.frame)-aboss.size.height/2);
+    [self addChild:aboss];
+    
+    [aboss runAction:[SKAction moveByX:0 y:-100 duration:0.5]];
+}
+#pragma mark- SparnManagerDelegate
+- (void)makeMonster{
+    [self createMonster];
+}
+- (void)makeBoss{
+    [self createBoss];
 }
 
 @end
